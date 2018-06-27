@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5">
+	<servlet>
+		<servlet-name>recursoInsertar</servlet-name>
+		<servlet-class>controller.resources.ResourcesControllerAdd</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>recursoInsertar</servlet-name>
+		<url-pattern>/recurso/insertar</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>recursoIndex</servlet-name>
+		<servlet-class>controller.resources.ResourcesControllerIndex</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>recursoIndex</servlet-name>
+		<url-pattern>/recurso</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>recursoDelete</servlet-name>
+		<servlet-class>controller.resources.ResourcesControllerDelete</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>recursoDelete</servlet-name>
+		<url-pattern>/recurso/eliminar</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>resourceUpdate</servlet-name>
+		<servlet-class>controller.resources.ResourceControllerUpdate</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>resourceUpdate</servlet-name>
+		<url-pattern>/recurso/modificar</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<servlet-name>RoleInsertar</servlet-name>
+		<servlet-class>controller.roles.RolesControllerAdd</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RoleInsertar</servlet-name>
+		<url-pattern>/role/insertar</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>RoleIndex</servlet-name>
+		<servlet-class>controller.roles.RolesControllerIndex</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RoleIndex</servlet-name>
+		<url-pattern>/role</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>RoleDelete</servlet-name>
+		<servlet-class>controller.roles.RolesControllerDelete</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RoleDelete</servlet-name>
+		<url-pattern>/role/eliminar</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>RoleUpdate</servlet-name>
+		<servlet-class>controller.roles.RolesControllerUpdate</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RoleUpdate</servlet-name>
+		<url-pattern>/role/modificar</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<servlet-name>AccesoIndex</servlet-name>
+		<servlet-class>controller.access.AccessControllerIndex</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AccesoIndex</servlet-name>
+		<url-pattern>/acceso</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AccesoInsertar</servlet-name>
+		<servlet-class>controller.access.AccessControllerAdd</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AccesoInsertar</servlet-name>
+		<url-pattern>/acceso/insertar</url-pattern>
+	</servlet-mapping>
+	
+	
+
+
+
+
+
+	<servlet>
+		<servlet-name>correo</servlet-name>
+		<servlet-class>gmail.GmailServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>correo</servlet-name>
+		<url-pattern>/gmail</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>UserAñadir</servlet-name>
+		<servlet-class>controller.users.UsersControllerAdd</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserAñadir</servlet-name>
+		<url-pattern>/usuario/insertar</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>UserIndex</servlet-name>
+		<servlet-class>controller.users.UsersControllerIndex</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserIndex</servlet-name>
+		<url-pattern>/usuario</url-pattern>
+	</servlet-mapping>
+<servlet>
+		<servlet-name>UserDelete</servlet-name>
+		<servlet-class>controller.users.UsersControllerDelete</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserDelete</servlet-name>
+		<url-pattern>/usuario/eliminar</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>UserUpdate</servlet-name>
+		<servlet-class>controller.users.UsersControllerUpdate</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserUpdate</servlet-name>
+		<url-pattern>/usuario/modificar</url-pattern>
+	</servlet-mapping>
+
+
+
+
+
+
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>
